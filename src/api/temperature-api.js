@@ -1,26 +1,4 @@
 
-/*
-export default class Temperature {
-	constructor() {
-		this.key = process.env.REACT_APP_WEATHER_KEY;
-		this.baseUrl = "http://api.apixu.com/v1";
-		this.routes = {
-			current: 	this.baseUrl + "/current.json",
-			forecast: this.baseUrl + "/forecast.json",
-			search: this.baseUrl + "/search.json",
-		}
-	}
-
-	async request(location = "auto:ip") {
-		if (navigator) {
-			console.log(navigator)
-		}
-		let result  = await fetch(`http://api.apixu.com/v1/current.json?key=${this.key}&q=${location}"`)
-		let data = await result.json();
-		return data;
-	}
-
-}*/
 const fetchTemp = async (location = "auto:ip") =>{
 	const key = process.env.REACT_APP_WEATHER_KEY;
 	try {

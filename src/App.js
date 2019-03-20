@@ -3,14 +3,10 @@ import SearchBar from './Components/search-bar';
 import TemperatureCard from "./Components/temperature-card";
 import Forecast from "./Components/forecast";
 import './App.css';
-import { createStore } from "redux";
-import { connect, Provider } from "react-redux";
-import initialState from "./store";
-import { weatherApp } from './reducers.js';
-import { handleViewState, setCurrentData, errorHandler, changeViewState, setForecastData } from './actions.js';
+import { connect } from "react-redux";
+import { setCurrentData, errorHandler, changeViewState } from './actions.js';
 import { fetchTemp, fetchTempMock } from './api/temperature-api';
-import { fetchForecast } from './api/forecast-api';
-import { stat } from 'fs';
+
 
 //const weather_key = process.env.REACT_APP_WEATHER_KEY;
 

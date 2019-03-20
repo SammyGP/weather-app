@@ -3,7 +3,6 @@ import { CardBackground } from "./background-display.js";
 import "./temperature-card.css";
 import { icons } from "./icons.js";
 import { connect } from 'react-redux';
-import Temperature from '../api/temperature-api.js';
 import { fetchForecast } from '../api/forecast-api.js';
 import { setForecastData, errorHandler, changeViewState } from '../actions.js';
 
