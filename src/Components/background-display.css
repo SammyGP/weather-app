@@ -1,0 +1,86 @@
+
+
+.wrapper-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100px;
+    min-width:30px;
+    height: 38vh;
+    width: 25vw;
+    margin: auto;
+    border-radius:2px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position:inherit;
+    bottom:20px;
+    right:20px;
+
+    cursor: default;
+
+    animation: pop-in 1s ease forwards;
+}
+.wrapper-div i {
+    font-size: 56px;
+    margin:4px;
+}
+.wrapper-div img {
+    border-radius:5%;
+    box-shadow: 0 14px 18px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.wrapper-div h2 {
+    font-size: 48px;
+    color:#fefefe;
+    opacity:1;
+    fill-opacity: 0.7;
+    text-shadow: 2px 2px 1px black;
+}
+.wrapper-div button {
+    font-size: 48px;
+    color:#fefefe;
+    opacity:1;
+    fill-opacity: 0.7;
+    text-shadow: 2px 2px 1px black;
+
+}
+.forecast-toggle {
+    outline:1px solid black;
+    height:100%;
+    width: 20px;
+    float:left;
+    z-index:2;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    cursor:pointer;
+}
+
+@keyframes pop-in {
+    0%, 100% {
+        transform: none;
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    60% {
+        transform: scale(0.9);
+    }
+}
+@media (max-width: 1024px) {
+    .wrapper-div {
+        min-width:30%;
+        min-height:30%;
+        height:10rem;
+        width:10rem;
+        margin-right:5px;
+        margin-bottom:5px;
+    }
+    .wrapper-div i {
+        font-size: 1em;
+    }
+    .wrapper-div h2 {
+        font-size: 1em;
+        height:24px;
+    }
+    .wrapper-div button {
+        font-size:1em;
+        height:24px;
+    }
+}
